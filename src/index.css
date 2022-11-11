@@ -20,7 +20,7 @@ body{
 }
 
 .calculator{
-    display: block;
+    display: flex;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
@@ -41,4 +41,25 @@ body{
 
 .calculator__layout{
     margin: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
+
+.the__calculator{
+    width: 100%;
+    display: block;
+}
+
+.the__calculator td{
+    text-align: center;
+}
+
+.the__calculator th{
+    text-align: right;
+}
+
