@@ -1,0 +1,79 @@
+/* the global css part */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* homepage css part */
+
+
+.main{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+.calculator{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.pose{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 1;
+    width: 100%;
+}
+
+/* calculator layout css part */
+
+.calculator__layout{
+    margin: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.the__calculator{
+    width: 100%;
+    display: block;
+    border-radius: 11px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  6px 6px 11px #c3c3c3, -6px -6px 11px #fdfdfd;
+    padding: 5px;         
+}
+
+.the__calculator th{
+    text-align: right;
+}
+
+.the__calculator td{
+    text-align: center;
+}
+
+.calculator__button{
+    border-radius: 86px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  6px 6px 11px #c3c3c3, -6px -6px 11px #fdfdfd;
+    padding: 15px;
+    margin: 5px;               
+}
