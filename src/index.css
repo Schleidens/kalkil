@@ -26,6 +26,8 @@ body{
     flex-basis: auto;
     align-self: auto;
     order: 0;
+    width: 100%;
+    justify-content: center;
 }
 
 .pose{
@@ -35,6 +37,7 @@ body{
     flex-basis: auto;
     align-self: auto;
     order: 1;
+    width: 100%;
 }
 
 /* calculator layout css part */
@@ -53,13 +56,24 @@ body{
 .the__calculator{
     width: 100%;
     display: block;
-}
-
-.the__calculator td{
-    text-align: center;
+    border-radius: 11px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  6px 6px 11px #c3c3c3, -6px -6px 11px #fdfdfd;
+    padding: 5px;         
 }
 
 .the__calculator th{
     text-align: right;
 }
 
+.the__calculator td{
+    text-align: center;
+}
+
+.calculator__button{
+    border-radius: 86px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  6px 6px 11px #c3c3c3, -6px -6px 11px #fdfdfd;
+    padding: 15px;
+    margin: 5px;               
+}
