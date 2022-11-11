@@ -37,3 +37,8 @@ body{
     order: 1;
 }
 
+/* calculator layout css part */
+
+.calculator__layout{
+    margin: 10px;
+}

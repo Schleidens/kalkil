@@ -1,10 +1,11 @@
 import React from 'react'
+import Calculator from './layout/Calculator'
 
 function Homepage() {
   return (
     <div className='main'>
        <div className='calculator'>
-            calculator
+            <Calculator />
         </div>
        <div className='pose'>
             pose
