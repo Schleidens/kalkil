@@ -1,5 +1,6 @@
 import React from 'react'
 import CalculatorButtons from './Components/CalculatorButtons'
+import CalculatorButtonsX from './Components/CalculatorButtonsX'
 
 function calculator() {
   return (
@@ -35,13 +36,13 @@ function calculator() {
             </tr>
 
             <tr>
-              <td colSpan="2"><CalculatorButtons calculatorButton="0"/></td>
+              <td colSpan="2"><CalculatorButtonsX calculatorButtonX="0"/></td>
               <td><CalculatorButtons calculatorButton="C"/></td>
               <td><CalculatorButtons calculatorButton="+"/></td>
             </tr>
             <tr>
               <td colSpan="4">
-              <CalculatorButtons calculatorButton="="/>
+              <CalculatorButtonsX calculatorButtonX="="/>
               </td>
             </tr>
             </tbody>

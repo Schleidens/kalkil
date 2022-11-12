@@ -77,3 +77,12 @@ body{
     padding: 15px;
     margin: 5px;               
 }
+
+.calculator__button__x{
+    border-radius: 86px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  6px 6px 11px #c3c3c3, -6px -6px 11px #fdfdfd;
+    padding: 15px;
+    margin: 5px;     
+    width: 100%;          
+}
