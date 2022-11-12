@@ -44,7 +44,9 @@ function calculator() {
               <td><CalculatorButtons calculatorButton="+"/></td>
             </tr>
             <tr>
-              <td colSpan="4">
+              <td><CalculatorButtons calculatorButton="."/></td>
+              <td><CalculatorButtons calculatorButton="Del"/></td>
+              <td colSpan="2">
               <CalculatorButtonsX calculatorButtonX="="/>
               </td>
             </tr>
