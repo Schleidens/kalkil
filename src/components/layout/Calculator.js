@@ -1,6 +1,7 @@
 import React from 'react'
 import CalculatorButtons from './Components/CalculatorButtons'
 import CalculatorButtonsX from './Components/CalculatorButtonsX'
+import ResultBox from './Components/ResultBox'
 
 function calculator() {
   return (
@@ -8,7 +9,9 @@ function calculator() {
        <table className='the__calculator'>
             <thead>
             <tr>
-              <th colSpan="4">result</th>
+              <th colSpan="4">
+                <ResultBox result="result"/>
+              </th>
             </tr>
             </thead>
             

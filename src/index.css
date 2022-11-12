@@ -58,8 +58,8 @@ body{
     display: block;
     border-radius: 11px;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow:  6px 6px 11px #c3c3c3, -6px -6px 11px #fdfdfd;
-    padding: 5px;         
+    box-shadow:  6px 6px 6px #c3c3c3, -6px -6px 6px #fdfdfd;
+    padding: 10px;         
 }
 
 .the__calculator th{
@@ -85,4 +85,21 @@ body{
     padding: 15px;
     margin: 5px;     
     width: 100%;          
+}
+
+.result__box{
+    color: #4d4a4a;
+
+    width: 100%;
+
+    margin: 5px 0px 10px 0px;
+    padding: 20px 5px 20px 5px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    border-radius: 2px;
+background: #e0e0e0;
+box-shadow: inset 5px 5px 0px #8d8d8d,
+            inset -5px -5px 0px #ffffff;
 }
