@@ -5,9 +5,13 @@ function calculator() {
   return (
     <div className='calculator__layout'>
        <table className='the__calculator'>
+            <thead>
             <tr>
               <th colSpan="4">result</th>
             </tr>
+            </thead>
+            
+            <tbody>
             <tr>
               <td>
                 <CalculatorButtons calculatorButton="9"/>
@@ -38,6 +42,7 @@ function calculator() {
             <tr>
               <td colSpan="4">=</td>
             </tr>
+            </tbody>
       </table>
     </div>
   )
