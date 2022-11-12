@@ -16,31 +16,33 @@ function calculator() {
               <td>
                 <CalculatorButtons calculatorButton="9"/>
               </td>
-              <td>8</td>
-              <td>7</td>
-              <td>/</td>
+              <td><CalculatorButtons calculatorButton="8"/></td>
+              <td><CalculatorButtons calculatorButton="7"/></td>
+              <td><CalculatorButtons calculatorButton="/"/></td>
             </tr>
             <tr>
-              <td>6</td>
-              <td>5</td>
-              <td>4</td>
-              <td>*</td>
-            </tr>
-
-            <tr>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>-</td>
+              <td><CalculatorButtons calculatorButton="6"/></td>
+              <td><CalculatorButtons calculatorButton="5"/></td>
+              <td><CalculatorButtons calculatorButton="4"/></td>
+              <td><CalculatorButtons calculatorButton="*"/></td>
             </tr>
 
             <tr>
-              <td colSpan="2">0</td>
-              <td>.</td>
-              <td>+</td>
+              <td><CalculatorButtons calculatorButton="1"/></td>
+              <td><CalculatorButtons calculatorButton="2"/></td>
+              <td><CalculatorButtons calculatorButton="3"/></td>
+              <td><CalculatorButtons calculatorButton="-"/></td>
+            </tr>
+
+            <tr>
+              <td colSpan="2"><CalculatorButtons calculatorButton="0"/></td>
+              <td><CalculatorButtons calculatorButton="C"/></td>
+              <td><CalculatorButtons calculatorButton="+"/></td>
             </tr>
             <tr>
-              <td colSpan="4">=</td>
+              <td colSpan="4">
+              <CalculatorButtons calculatorButton="="/>
+              </td>
             </tr>
             </tbody>
       </table>
