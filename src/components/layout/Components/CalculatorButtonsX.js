@@ -1,6 +1,6 @@
 import React from 'react'
 
-function buttons(props) {
+function CalculatorButtonsX(props) {
   return (
     <button className='calculator__button__x' onClick={props.onClick} data-value={props.value}>
         {props.calculatorButtonX}
@@ -8,4 +8,4 @@ function buttons(props) {
   )
 }
 
-export default buttons
+export default CalculatorButtonsX
