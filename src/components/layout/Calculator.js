@@ -6,10 +6,15 @@ import ResultBox from './Components/ResultBox'
 function Calculator() {
   const [result, setResult] = useState("");
 
+
+  //button interact method to match any button 
+
   const handleClick = e => {
     const value = e.target.getAttribute('data-value');
-    console.log(value)
-        switch(value) {
+        if(result === 'ERROR' || result === 'undefined'){
+          setResult((value))
+        }else{
+          switch(value) {
             case 'clear':
                 setResult((''))
                 break;
@@ -22,15 +27,19 @@ function Calculator() {
             default:
                 setResult((result+value))
         }
+        }
+
   }
 
+  
+//calculate function set result to the exact calcule
   const calculate = () =>{
     try {
       // eslint-disable-next-line no-eval
       const finalResult = eval(result);
       setResult((finalResult))
   } catch (e) {
-     setResult(('Salopriw la pa bon'))
+     setResult(('ERROR'))
   }
   }
 
@@ -70,13 +79,12 @@ function Calculator() {
             </tr>
 
             <tr>
-              <td colSpan="2"><CalculatorButtonsX calculatorButtonX="0" onClick={handleClick} value="0"/></td>
-              <td><CalculatorButtons calculatorButton="C" onClick={handleClick} value="slice"/></td>
+              <td colSpan="3"><CalculatorButtonsX calculatorButtonX="0" onClick={handleClick} value="0"/></td>
               <td><CalculatorButtons calculatorButton="+" onClick={handleClick} value="+"/></td>
             </tr>
             <tr>
               <td><CalculatorButtons calculatorButton="." onClick={handleClick} value="."/></td>
-              <td><CalculatorButtons calculatorButton="Del" onClick={handleClick} value="clear"/></td>
+              <td><CalculatorButtons calculatorButton="AC" onClick={handleClick} value="clear"/></td>
               <td colSpan="2">
               <CalculatorButtonsX calculatorButtonX="=" onClick={handleClick} value="equal"/>
               </td>
