@@ -1,8 +1,19 @@
 /* the global css part */
 
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap');
+
 body{
     margin: 0;
     padding: 0;
+    background-color: #00B0FF;
+
+}
+
+a{
+    color: #F50057;
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: 'Sono', sans-serif;
 }
 
 /* homepage css part */
@@ -21,23 +32,14 @@ body{
 
 .calculator{
     display: flex;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
     width: 100%;
     justify-content: center;
 }
 
 .pose{
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 1;
+    display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 /* calculator layout css part */
@@ -46,20 +48,15 @@ body{
     margin: 10px;
 
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+
     align-items: center;
-    align-content: center;
 }
 
 .the__calculator{
-    width: 100%;
-    display: block;
     border-radius: 11px;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow:  6px 6px 11px #c3c3c3, -6px -6px 11px #fdfdfd;
-    padding: 5px;         
+    box-shadow:  6px 6px 6px #c3c3c3, -6px -6px 6px #fdfdfd;
+    padding: 10px;         
 }
 
 .the__calculator th{
@@ -71,9 +68,75 @@ body{
 }
 
 .calculator__button{
+    font-size: 1em;
+
     border-radius: 86px;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
     box-shadow:  6px 6px 11px #c3c3c3, -6px -6px 11px #fdfdfd;
-    padding: 15px;
+    padding: 25px;
     margin: 5px;               
 }
+
+.calculator__button__x{
+    font-size: 1em;
+
+    border-radius: 86px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  6px 6px 11px #c3c3c3, -6px -6px 11px #fdfdfd;
+    padding: 25px;
+    margin: 5px;     
+    width: 100%;          
+}
+
+.result__box{
+    font-size: 1em;
+
+    color: #4d4a4a;
+
+    width: 100%;
+
+    margin: 5px 0px 10px 0px;
+    padding: 20px 5px 20px 5px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    border-radius: 2px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 0px #8d8d8d,
+            inset -5px -5px 0px #ffffff;
+}
+
+
+/* pose css part */
+
+.pose__box{
+    padding: 20px;
+}
+
+.pose__title{
+    color: #F50057;
+    font-size: 3em;
+    margin: 20px 0px 0px 0px;
+    font-family: 'Sono', sans-serif;
+}
+
+.pose__subtitle{
+    color: #f7f2f2;
+    font-size: .9em;
+    font-family: 'Sono', sans-serif;
+}
+
+.pose__image{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* mobile responsivity */
+
+@media screen and (max-width: 768px) {
+    .pose{
+        display: none;
+    }
+  }
